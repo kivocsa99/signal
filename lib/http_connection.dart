@@ -485,7 +485,7 @@ class HttpConnection implements IConnection {
       return url;
     }
 
-    return url! + (url.indexOf("?") == -1 ? "?" : "&") + "id=$connectionToken";
+    return url!;
   }
 
   Future<void> _createTransport(
