@@ -447,7 +447,7 @@ class HttpConnection implements IConnection {
       headers.setHeaderValue('Upgrade', 'websocket');
     }
 
-    final negotiateUrl = _resolveNegotiateUrl(url);
+    final negotiateUrl = 'https://app.fxtweet.com/hubs/livefeed';
     _logger?.finer("Sending negotiation request: $negotiateUrl");
     try {
       final SignalRHttpRequest options = SignalRHttpRequest(
